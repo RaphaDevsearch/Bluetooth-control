@@ -9,6 +9,20 @@ public class BC{
         this.otherDevice = "Other device";
     }
 
+    
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+
+
+    public void setOtherDevice(String otherDevice) {
+        this.otherDevice = otherDevice;
+    }
+
+
+
     public String getDeviceName(){return this.deviceName;}
     public String getOtherDeviceName() {return this.otherDevice;}
     
@@ -52,5 +66,11 @@ public class BC{
 
     public void getStatus() {
         System.out.println("[Bluetooth] Getting status...");
+    }
+
+
+
+    public String getOtherDevice() {
+        return otherDevice;
     }
 }
