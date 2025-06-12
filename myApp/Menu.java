@@ -1,9 +1,9 @@
 package myApp;
 
 public class Menu {
+    private int choose;
     public Menu() {
     }
-
     public void show() {
         System.out.println("\n=== Bluetooth Manager ===");
         System.out.println("1. Turn Bluetooth ON");
@@ -19,4 +19,12 @@ public class Menu {
         System.out.println("0. Exit");
         System.out.print("Choose an option: ");
     }
+    public int getChoose(){
+        return this.choose;
+    }
+
+    public void choose(){
+        this.choose = 3;
+    }
+
 }
